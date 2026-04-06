@@ -11,12 +11,17 @@ export default function Contact() {
   return (
     <main className="pt-20">
       {/* Header */}
-      <section className="bg-gray-900 py-24 text-white">
-        <div className="max-content text-center">
-          <h1 className="text-4xl md:text-5xl mb-6 text-white">Contact Us</h1>
-          <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Have a project in mind? Let's discuss how we can help you achieve your renewable energy goals.
-          </p>
+      <section className="bg-gray-900 py-12 text-white border-b border-white/10">
+        <div className="max-content">
+          <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">Contact Us</h1>
+              <div className="h-1 w-20 bg-primary rounded-full"></div>
+            </div>
+            <p className="text-gray-400 max-w-md text-sm md:text-base">
+              Have a project in mind? Let's discuss how we can help you achieve your goals.
+            </p>
+          </div>
         </div>
       </section>
 

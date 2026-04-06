@@ -6,15 +6,14 @@ export default function Home() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center pt-32 pb-20 overflow-hidden">
+      <section className="relative min-h-[85vh] flex items-center pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?auto=format&fit=crop&q=80&w=1920"
-            alt="Renewable Energy"
+            src="/images/hero-bg.jpg"
+            alt="Igreen Creative Developers - Renewable Energy"
             className="w-full h-full object-cover"
-            referrerPolicy="no-referrer"
           />
-          <div className="absolute inset-0 bg-black/50"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent"></div>
         </div>
         
         <div className="max-content relative z-10 text-white w-full">
@@ -22,17 +21,21 @@ export default function Home() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="max-w-2xl"
+            className="max-w-3xl"
           >
-            <h1 className="text-4xl md:text-6xl text-white mb-6 leading-tight">
-              Powering India's <span className="text-primary">Renewable</span> Future
+            <h1 className="text-5xl md:text-7xl text-white mb-6 leading-tight font-display font-bold">
+              Powering India's <span className="text-amber-400">Renewable</span> Future
             </h1>
-            <p className="text-lg md:text-xl mb-8 text-gray-200">
+            <p className="text-xl md:text-2xl mb-10 text-gray-100 max-w-2xl leading-relaxed">
               Pioneering land acquisition and infrastructure solutions for wind and solar energy projects across India.
             </p>
-            <div className="flex flex-wrap gap-4">
-              <Link to="/services" className="btn-primary">Our Services</Link>
-              <Link to="/contact" className="bg-white text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all shadow-md">Contact Us</Link>
+            <div className="flex flex-wrap gap-6">
+              <Link to="/services" className="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition-all shadow-lg hover:shadow-primary/30">
+                Our Services
+              </Link>
+              <Link to="/contact" className="bg-white/10 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-white/20 transition-all shadow-lg">
+                Contact Us
+              </Link>
             </div>
           </motion.div>
         </div>
