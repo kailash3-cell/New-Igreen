@@ -28,7 +28,7 @@ export default function Projects() {
       client: 'Vestas Venture PVT',
       location: 'Osmanabad',
       details: '12 villages survey & Land acquisition for 15 locations.',
-      img: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?auto=format&fit=crop&q=80&w=800'
+      img: '/images/osmanabad-project.jpg'
     },
     {
       title: 'Solar Plan Development',
